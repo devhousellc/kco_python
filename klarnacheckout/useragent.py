@@ -21,9 +21,9 @@ Additional fields can be added with the formatting taken care of.
 # limitations under the License.
 
 import sys
-import os
+import platform
 
-__version__ = '3.0.1'
+__version__ = '3.0.2'
 
 
 class UserAgent(object):
@@ -45,8 +45,8 @@ class UserAgent(object):
                 "version": __version__
             },
             "OS": {
-                "name": os.uname()[0],
-                "version": os.uname()[2]
+                "name": platform.uname()[0],
+                "version": platform.uname()[2]
             },
             "Language": {
                 "name": "Python",
